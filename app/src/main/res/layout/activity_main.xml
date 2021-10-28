@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:text="Lista de Sensores"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="406dp"
+        android:layout_height="573dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/txt_sensores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textMultiLine"
+            android:textColor="#0C25A3"
+            android:textSize="28sp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/LBL_Giroscopio"
+        android:layout_width="147dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="10sp"
+        android:text="Giroscopio :"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"></TextView>
+
+    <TextView
+        android:id="@+id/LBL_Rotation"
+        android:layout_width="147dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="8dp"
+        android:text="Rotation :"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Giroscopio"></TextView>
+
+    <TextView
+        android:id="@+id/txt_Giroscopio"
+        android:layout_width="87dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/LBL_Giroscopio"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/txt_Rotation"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/LBL_Rotation"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Giroscopio" />
+</androidx.constraintlayout.widget.ConstraintLayout>
